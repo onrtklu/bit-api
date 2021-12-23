@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "myzcqc4u4v4Yl2U8V4UB5S5CRNZ3Pw98nx3kcT+sygI=",
+  "Source": "BitBotApi.WebApi",
+  "BasePath": "_content/BitBotApi.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

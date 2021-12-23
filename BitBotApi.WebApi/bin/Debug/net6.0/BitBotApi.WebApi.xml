@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BitBotApi.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:BitBotApi.WebApi.Controllers.BitController.GetHeaderAndBodySell(System.String,System.String,System.String)">
+             <summary>
+             Satış emri için gerekli olan header ve body verilerini döner
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET 
+                 {
+                    "volume": 15.00, // gibi olmalıdır. Noktadan sonra 2 basamak eklenmeli
+                    "marketCode": "VANTRY", // gibi olmalıdır. Büyük harf ve takım token kodu önce yazılmalı,
+                    "price": 49.00 // gibi olmalıdır. Noktadan sonra 2 basamak eklenmeli
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:BitBotApi.WebApi.Controllers.BitController.GetHeaderAndBodyBuy(System.String,System.String,System.String)">
+             <summary>
+             Alış emri için gerekli olan header ve body verilerini döner
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET 
+                 {
+                    "volume": 15.00, // gibi olmalıdır. Noktadan sonra 2 basamak eklenmeli
+                    "marketCode": "VANTRY", // gibi olmalıdır. Büyük harf ve takım token kodu önce yazılmalı,
+                    "price": 49.00 // gibi olmalıdır. Noktadan sonra 2 basamak eklenmeli
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:BitBotApi.WebApi.Controllers.BitController.SendSellRequest(System.String,System.String,System.String)">
+             <summary>
+             Satış emri için istek gönderir
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET 
+                 {
+                    "volume": 15.00, // gibi olmalıdır. Noktadan sonra 2 basamak eklenmeli
+                    "marketCode": "VANTRY", // gibi olmalıdır. Büyük harf ve takım token kodu önce yazılmalı,
+                    "price": 49.00 // gibi olmalıdır. Noktadan sonra 2 basamak eklenmeli
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:BitBotApi.WebApi.Controllers.BitController.SendBuyRequest(System.String,System.String,System.String)">
+             <summary>
+             Alış emri için istek gönderir
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET 
+                 {
+                    "volume": 15.00, // gibi olmalıdır. Noktadan sonra 2 basamak eklenmeli
+                    "marketCode": "VANTRY", // gibi olmalıdır. Büyük harf ve takım token kodu önce yazılmalı,
+                    "price": 49.00 // gibi olmalıdır. Noktadan sonra 2 basamak eklenmeli
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:BitBotApi.WebApi.Controllers.BitController.CancelOrder(System.Int32)">
+             <summary>
+             Emri iptal eder
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET 
+                 {
+                    "id": 42323 // alış ya da satış isteğinin sonucunda dönen id değeri girilmeli
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:BitBotApi.WebApi.Controllers.BitController.GetOrder(System.String)">
+             <summary>
+             Alış-Satış emir durumunu gösterir
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET 
+                 {
+                    "marketCode": "VANTRY", // gibi olmalıdır. Büyük harf ve takım token kodu önce yazılmalı
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:BitBotApi.WebApi.Controllers.BitController.GetOrderBook(System.String)">
+             <summary>
+             Girilen market koduna göre son işlem yapılan fiyat, en yakın alış isteği ve en yakın satış isteği gösterilir
+             </summary>
+             <remarks>
+             Daha ayrıntılı bilgi için <a href="https://www.bitexen.com/api/v1/order_book/VANTRY/" target="_blank">Bu sayfadan bakabilirsiniz</a>
+             
+             Sample request:
+            
+                 GET 
+                 {
+                    "marketCode": "VANTRY", // gibi olmalıdır. Büyük harf ve takım token kodu önce yazılmalı
+                 }
+            
+             </remarks>
+        </member>
+    </members>
+</doc>

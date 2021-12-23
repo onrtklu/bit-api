@@ -1,0 +1,1 @@
+> Change "BitConfig" on appsettings.Development.json page
